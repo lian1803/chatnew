@@ -178,4 +178,5 @@ if __name__ == '__main__':
     print(f"   디버그 모드: {debug}")
     print(f"   웹훅 URL: http://localhost:{port}/webhook")
     
-    app.run(host='0.0.0.0', port=port, debug=debug) 
+    # Render에서는 debug=False로 설정
+    app.run(host='0.0.0.0', port=port, debug=False) 
